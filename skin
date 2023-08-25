@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skin</title>
+</head>
+<body>
+    <canvas id="skin" width="2000" height="2000"></canvas>
+
+    <script>
+        const canvas=document.getElementById("skin");
+        const ctx=canvas.getContext("2d");
+
+        //Cabeza 
+        ctx.fillStyle=" #faebd7";
+        ctx.beginPath();
+        ctx.arc(100,100,50,0,Math.PI*2);
+        ctx.fill();
+        ctx.closePath();
+
+        //Ojos
+        ctx.fillStyle="#009c8c";
+        ctx.beginPath();
+        ctx.arc(80,80,10,0,Math.PI*2);
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(120,80,10,0,Math.PI*2);
+        ctx.fill();
+        ctx.closePath();
+
+        //Nariz
+        ctx.fillStyle="#d99058";
+        ctx.beginPath();
+        ctx.arc(100,100,5,0,Math.PI*2);
+        ctx.fill();
+        ctx.closePath();
+
+        //Boca
+        ctx.beginPath();
+        ctx.arc(100,120,20,0.2*Math.PI,0.8*Math.PI);
+        ctx.stroke();
+        ctx.closePath();
+
+        // Torso
+        ctx.fillStyle="red";
+        ctx.fillRect(75,150,50,60);
+        
+        // Mangas
+        ctx.fillStyle="red";
+        ctx.fillRect(170,145,-140,10);
+
+        //Brazos
+        ctx.fillStyle="#faebd7";
+        ctx.fillRect(30,155,15,60);//Brazo izquierdo
+        ctx.fillRect(155,155,15,60);//Brazo derecho
+
+        //Pantalones
+        ctx.fillStyle="blue";
+        ctx.fillRect(75,210,50,100);
+
+        //Cinturon
+        ctx.fillStyle="black";
+        ctx.fillRect(75,210,50,5);
+
+        //Hebilla
+        ctx.fillStyle="gold";
+        ctx.fillRect(95,210,10,5);    
+        
+        //Tenis
+        ctx.fillStyle="black";
+        ctx.fillRect(75,300,50,20);
+
+        
+       
+
+        //derecha,arriba o abajo,ancho,largo
+      
+        
+    </script>
+</body>
+</html>
