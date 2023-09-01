@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paisaje</title>
+</head>
+<body>
+    <canvas id="miCanvas" width="1000" height="600"></canvas>
+
+    <script>
+        const canvas = document.getElementById("miCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = 'black';
+
+        //Fondo
+        ctx.fillStyle = '#c4dfe6';
+        ctx.fillRect(0, 0, 1000, 800);
+        ctx.shadowColor = 'transparent';
+        ctx.shadowBlur = 0;
+
+        //Caja atras verde
+        ctx.shadowColor='rgba(0,0,0,0.4)';
+        ctx.shadowBlur=10;
+        ctx.fillStyle='#89da59';
+        ctx.fillRect(350,175,200,300);
+        ctx.beginPath();
+        ctx.arc(367,195,10,0,2*Math.PI);
+        ctx.fillStyle="#bdbdbd";
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.arc(530,195,10,0,2*Math.PI);
+        ctx.fillStyle="#bdbdbd";
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.arc(530,455,10,0,2*Math.PI);
+        ctx.fillStyle="#bdbdbd";
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        ctx.shadowColor='transparent';
+        ctx.shadowBlur=0;
+
+        //Caja adelante 
+        ctx.shadowColor='rgba(0,0,0,0.5)';
+        ctx.shadowBlur=10;
+        ctx.fillStyle='#d7ccc8'; 
+        ctx.fillRect(200,275,200,200);
+        ctx.beginPath();
+        ctx.arc(225, 455,10,0,2*Math.PI);
+        ctx.fillStyle="#bdbdbd";
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.arc(380,455,10,0,4 * Math.PI);
+        ctx.fillStyle="#bdbdbd";
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.arc(380,295,10,0,2*Math.PI);
+        ctx.fillStyle="#bdbdbd";
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.arc(225,295,10,0,2*Math.PI);
+        ctx.fillStyle="#bdbdbd";
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        ctx.shadowColor='transparent';
+        ctx.shadowBlur=0;
+
+
+        //Tuberia
+        ctx.shadowColor='rgba(0,0,0,0.5)';
+        ctx.shadowBlur=10;
+        ctx.beginPath();
+        ctx.fillStyle='#598234'; 
+        ctx.fillRect(650,380,100,100);
+        ctx.strokeRect(650,380,100,100);
+        ctx.fillStyle='#598234';
+        ctx.fillRect(637,330,125,50);
+        ctx.strokeRect(637,330,125,50);
+        ctx.closePath();
+        ctx.shadowColor='transparent';
+        ctx.shadowBlur=0;
+
+        //Arbusto
+        ctx.shadowColor='rgba(0,0,0,0.5)';
+        ctx.shadowBlur=8;
+        ctx.fillStyle="#green";   
+        ctx.beginPath();
+        ctx.arc(80,455,30,0,5*Math.PI);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(100,475,30,0,5*Math.PI);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(60,475,30,0,5*Math.PI);
+        ctx.fill();
+        ctx.shadowColor='transparent';
+        ctx.shadowBlur=0;
+
+        //Suelo
+        ctx.shadowColor='rgba(0,0,0,0.4)';
+        ctx.shadowBlur=8;
+        ctx.beginPath();
+        ctx.fillStyle='#ffcc80';
+        ctx.fillRect(0,500,1000,100);
+        ctx.strokeRect(0,500,1000,100);
+        ctx.fillStyle='#ffb74d';
+        ctx.fillRect(0,475,1000,25);
+        ctx.strokeRect(0,475,1000,25);
+        ctx.closePath();
+        ctx.shadowColor='transparent';
+        ctx.shadowBlur=0;
+
+       
+        //Caja coin
+        ctx.shadowColor='rgba(0,0,0,0.4)';
+        ctx.shadowBlur=10;
+        ctx.fillStyle="#ffcc80";
+        ctx.lineWidth=8;
+        ctx.fillRect(70,200,50,50);
+        ctx.fillRect(200,100,50,50);
+        ctx.fillRect(147,100,50,50);
+        ctx.fillRect(900,100,50,50);
+        ctx.fillStyle='white';
+        ctx.font='30px Arial';
+        ctx.fillText('?',87,240);
+        ctx.fillText('?',217,140);
+        ctx.fillText('?',164,140);
+        ctx.fillText('?',914,140);
+      
+        //Caja verde
+        ctx.shadowColor='rgba(0,0,0,0.4)';
+        ctx.shadowBlur=10;
+        ctx.fillStyle='#80cbc4';
+        ctx.fillRect(850,275,200,200);
+        ctx.beginPath();
+        ctx.arc(870,455,10,0,2*Math.PI);
+        ctx.fillStyle = "#bdbdbd";
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.arc(870,295,10,0,2*Math.PI);
+        ctx.fillStyle="#bdbdbd";
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        ctx.shadowColor='transparent';
+        ctx.shadowBlur=0;
+
+      
+
+        //derecha,arriba o abajo,ancho,largo
+    </script>
+</body>
+</html>
